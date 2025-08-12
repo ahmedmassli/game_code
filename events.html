@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - Online Gaming</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="deals.html">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <h2>Events and Promotions</h2>
+
+        <p>
+          To boost user engagement and participation, we regularly organise
+          events and promotions. These events include:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Gaming Tournaments:</strong> Competitive events where users
+            can compete for prizes.
+          </li>
+          <li>
+            <strong>New Game Launches:</strong> Exclusive access and promotions
+            for newly released games.
+          </li>
+          <li>
+            <strong>Community Challenges:</strong> Fun challenges that encourage
+            users to achieve specific in-game goals.
+          </li>
+          <li>
+            <strong>Seasonal Sales:</strong> Special discounts and offers during
+            holidays and seasons.
+          </li>
+        </ul>
+
+        <p>
+          Events and promotions are communicated through our website, email
+          newsletters, and social media channels to attract a wider audience.
+        </p>
+        <img
+          src="images/runefest.jpg"
+          alt="in person gaming event"
+          id="small_event_image"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

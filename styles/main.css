@@ -1,0 +1,392 @@
+/* #################### genral styles */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover,
+a:focus {
+  color: pink;
+  transition: all 0.3s ease;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #ff66b2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+html {
+  background-color: #00aaff;
+}
+
+h1 {
+  color: #00aaff;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 4vw;
+  font-size: min(4vw, 45px);
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+main {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+header {
+  background-color: lightblue;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: lightblue;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 0em;
+  box-sizing: border-box;
+}
+
+.logo {
+  float: left;
+  width: 15vw;
+  min-width: 10em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ff66b2;
+  border-radius: 15px;
+  height: auto;
+  margin-right: 7em;
+}
+
+.page-section {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 8px;
+  margin: max(1.5vw, 20px);
+}
+
+h2 {
+  margin: 0;
+}
+
+/* #################### home page styles for the section that has a aside element */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Style for the left section */
+.section-sidebar {
+  flex: 3; /* This makes it take up 3 parts of the available space */
+  background-color: lightblue;
+  border-radius: 8px;
+}
+
+/* Style for the right sidebar */
+.sidebar {
+  flex: 1; /* This makes it take up 1 part of the available space */
+  background-color: #00aaff;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* #################### image styles for the headshot images on the about us page */
+
+.headshots_of_the_team {
+  width: 150px;
+  height: auto;
+}
+
+/* #################### image styles for the event image on the events page */
+
+#small_event_image {
+  width: 30vw;
+  height: auto;
+}
+
+/* #################### image styles for the games images on the deals page */
+
+.games_images {
+  width: 15vw;
+  height: auto;
+}
+
+/* #################### game table styles for the games page */
+
+#game-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#game-table th,
+#game-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#game-table th {
+  background-color: #f2f2f2;
+}
+
+#game-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+#game-table tr:nth-child(odd) {
+  background-color: white;
+}
+
+#game-table tr:hover {
+  background-color: lightblue;
+}
+
+#page-section-table {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 8px;
+}
+/* ######################################## google maps styles for the contact us page */
+iframe {
+  width: 40vw;
+  height: 300px;
+}
+
+/* ######################################## registration  styles for the register page */
+
+#registration_form {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+#registration_title {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline-block;
+  width: max(20px, 10vw);
+  text-align: right;
+  vertical-align: top;
+}
+
+input,
+select,
+textarea {
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+input,
+textarea {
+  width: 20em;
+}
+
+select {
+  width: 20.7em;
+}
+
+select {
+  border: 2px solid #ccc;
+  padding: 1px 2px 1px 2px;
+}
+
+#terms,
+#news {
+  width: 1em;
+}
+
+#submit,
+#reset {
+  width: 8em;
+}
+
+textarea {
+  height: 5em;
+}
+
+form span {
+  color: red;
+  margin-left: 5px;
+}
+
+/* Style for the active menu item */
+
+.active {
+  background-color: #00aaff;
+  font-weight: bold;
+}
+
+/* ######################################## Base menu styles */
+
+#mobile_menu {
+  display: none; /* Initially hide the SlickNav menu */
+}
+
+#nav_menu {
+  display: block; /* Display the regular menu on larger screens */
+}
+
+#nav_menu {
+  background-color: #ff66b2;
+  width: 100%;
+}
+
+#nav_menu ul.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#nav_menu ul.main-menu > li {
+  position: relative;
+}
+
+#nav_menu ul.main-menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav_menu ul.main-menu > li > a:hover {
+  background-color: #ff3385;
+}
+
+/* Sub-menu styles */
+#nav_menu ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ff66b2;
+  min-width: 8em;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul.sub-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul.sub-menu li a {
+  padding: 12px 16px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+#nav_menu ul.sub-menu li a:hover {
+  background-color: #ff3385;
+}
+
+/* Show sub-menu on hover */
+#nav_menu ul.main-menu > li:hover > .sub-menu {
+  display: block;
+}
+
+/* For screens with max-width of 767px (tablets or mobile landscape) */
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #nav_menu {
+    display: none; /* Hide the regular navigation menu */
+  }
+
+  #mobile_menu {
+    display: block; /* Show the SlickNav menu */
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  body {
+    font-size: 2.5vw; /* Adjust body text size */
+  }
+
+  label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 1%;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 22vw;
+  }
+
+  #submit,
+  #reset {
+    width: 11vw;
+  }
+}
+
+/* For screens with max-width of 479px (small mobile devices in portrait mode) */
+@media only screen and (max-width: 479px) {
+  #nav_menu {
+    display: none; /* Hide the regular navigation menu */
+  }
+
+  #mobile_menu {
+    display: block; /* Show the SlickNav menu */
+  }
+
+  /* Reduce font sizes for small screens */
+  body {
+    font-size: 2.5vw;
+  }
+
+  #mobile_menu ul li a {
+    font-size: 12px; /* Adjust navigation link font size */
+  }
+}

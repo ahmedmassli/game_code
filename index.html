@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Online Gaming</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="deals.html">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <h2>Welcome to Online Gaming</h2>
+        <p>
+          Your ultimate destination for the best online gaming experience.
+          Explore, compete, and connect with gamers around the world!
+        </p>
+        <a href="games.html" class="cta-btn"> <h4>Explore Games</h4> </a>
+      </section>
+
+      <section class="page-section">
+        <h2>Global Reach</h2>
+        <p>
+          Online Gaming has experienced significant growth since it started the
+          business and now serves users globally. Our platform is designed to
+          provide efficient access to our games, ensuring that players from
+          around the world can easily enjoy our offerings.
+        </p>
+
+        <ul id="region-list">
+          <li>London, UK</li>
+          <li>New York, USA</li>
+          <li>Sydney, Australia</li>
+          <li>Tokyo, Japan</li>
+          <li>Berlin, Germany</li>
+          <li>Paris, France</li>
+          <li>Rio de Janeiro, Brazil</li>
+          <li>Moscow, Russia</li>
+        </ul>
+      </section>
+
+      <section class="page-section">
+        <div class="main-container">
+          <section class="section-sidebar">
+            <h2>Promoting an Engaging Gaming Experience</h2>
+            <p>
+              We are passionate about creating an engaging and enjoyable gaming
+              experience. Our commitment to this cause is reflected in our
+              diverse range of games designed to entertain and challenge
+              players.
+            </p>
+            <p>
+              We also provide tips and strategies for our games to help users
+              improve their skills and enjoy their gaming experience. You can
+              read more about gaming strategies and tips on these links:
+            </p>
+          </section>
+
+          <aside class="sidebar">
+            <h3>Additional Resources</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.bbc.co.uk/news/topics/c008ql15vdxt"
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn"
+                  ><h4>BBC Gaming</h4></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ign.com/wikis"
+                  class="cta-btn"
+                  target="_blank"
+                  ><h4>IGN Gaming Tips</h4></a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <h2>Daily News and Updates</h2>
+        <p>
+          We believe in keeping our users informed and engaged. Our website
+          features a “daily news” section that provides the latest updates on
+          game releases, tips, and community events. This section keeps our
+          users connected and interested in the activities of Online Gaming.
+        </p>
+
+        <div>
+          <article>
+            <h3>New Game Release: Magic Academy</h3>
+            <p>
+              Our latest strategy game “Magic Academy” is now live! Learn
+              spells, defeat challenges, and become the ultimate sorcerer.
+            </p>
+            <span class="date">Posted: April 5, 2025</span>
+          </article>
+
+          <article>
+            <h3>Pro Tips: Beating Puzzle Master Levels</h3>
+            <p>
+              Check out our top tips for solving the hardest levels in Puzzle
+              Master. Perfect for sharpening your puzzle-solving skills.
+            </p>
+            <span class="date">Posted: April 4, 2025</span>
+          </article>
+
+          <article>
+            <h3>Community Event: Global Game Night</h3>
+            <p>
+              Join players from around the world this Friday for a global gaming
+              marathon. Compete, chat, and win rewards!
+            </p>
+            <span class="date">Posted: April 3, 2025</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <h2>Ready to Join the Fun?</h2>
+        <p>
+          Register now and start your journey in the world of online gaming!
+        </p>
+        <h4><a href="register.html" class="cta-btn"> Join Now </a></h4>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

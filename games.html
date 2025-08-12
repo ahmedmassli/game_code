@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Games - Online Gaming</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html" class="active">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="deals.html">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="page-section-table">
+        <h2>Our Game Collection</h2>
+        <table id="game-table">
+          <thead>
+            <tr>
+              <th>Game Title</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fantasy Quest</td>
+              <td>
+                An immersive role-playing game where players embark on epic
+                adventures.
+              </td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Speed Racer</td>
+              <td>
+                A high-speed racing game with realistic graphics and challenging
+                tracks.
+              </td>
+              <td>£4.99</td>
+            </tr>
+            <tr>
+              <td>Puzzle Master</td>
+              <td>
+                A brain-teasing puzzle game with varying levels of difficulty.
+              </td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Zombie Invasion</td>
+              <td>
+                A thrilling shooter game where players fight against waves of
+                zombies.
+              </td>
+              <td>£2.99</td>
+            </tr>
+            <tr>
+              <td>Mystery Mansion</td>
+              <td>
+                A hidden object game set in a spooky mansion filled with
+                secrets.
+              </td>
+              <td>£1.99</td>
+            </tr>
+            <tr>
+              <td>Space Explorer</td>
+              <td>
+                A sci-fi adventure game that takes players on a space journey.
+              </td>
+              <td>£3.99</td>
+            </tr>
+            <tr>
+              <td>Chess Master</td>
+              <td>A classic chess game with advanced AI opponents.</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Word Wizard</td>
+              <td>
+                A word puzzle game that challenges players' vocabulary skills.
+              </td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Farm Frenzy</td>
+              <td>
+                A simulation game where players manage and grow their virtual
+                farm.
+              </td>
+              <td>£2.49</td>
+            </tr>
+            <tr>
+              <td>Battle Arena</td>
+              <td>
+                An action-packed fighting game with various characters and
+                moves.
+              </td>
+              <td>£4.99</td>
+            </tr>
+            <tr>
+              <td>Magic Academy</td>
+              <td>
+                A strategy game where players learn and use spells to overcome
+                challenges.
+              </td>
+              <td>£3.49</td>
+            </tr>
+            <tr>
+              <td>Sudoku Solver</td>
+              <td>A traditional Sudoku game with multiple levels and hints.</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Treasure Hunt</td>
+              <td>
+                An adventure game where players search for hidden treasures.
+              </td>
+              <td>£1.99</td>
+            </tr>
+            <tr>
+              <td>Card Clash</td>
+              <td>
+                A card game with strategic gameplay and unique card abilities.
+              </td>
+              <td>£2.99</td>
+            </tr>
+            <tr>
+              <td>City Builder</td>
+              <td>
+                A city-building simulation game where players create and manage
+                their city.
+              </td>
+              <td>£3.99</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

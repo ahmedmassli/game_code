@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deals and Discounts - Online Gaming</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="membership.html" class="active">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="deals.html">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <h2>Discounts and Membership Program</h2>
+        <p>
+          To reward our loyal users, we offer a
+          <strong>Membership Program</strong> that provides discounts and
+          exclusive offers based on a user's engagement history. This program
+          encourages repeat participation and boosts user retention.
+        </p>
+
+        <p>As part of the membership perks, users enjoy:</p>
+
+        <ul>
+          <li>Exclusive game discounts and early access to sales</li>
+          <li>Special birthday and milestone rewards</li>
+          <li>Priority access to events and new releases</li>
+          <li>Invitations to beta tests and community feedback sessions</li>
+        </ul>
+
+        <p>
+          We also feature a <strong>Deals and Discounts</strong> section on our
+          website that highlights:
+        </p>
+
+        <ul>
+          <li>Ongoing promotions and flash sales</li>
+          <li>Bundled game offers for themed collections</li>
+          <li>Special event and holiday discounts</li>
+        </ul>
+
+        <h4><a href="deals.html" class="cta-button">View Current Deals</a></h4>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

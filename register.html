@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Online Gaming</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="js/register.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html" class="active">Register</a></li>
+            <li><a href="deals.html">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <h2 id="registration_title">Register to Join Online Gaming</h2>
+        <form
+          action="index.html"
+          method="get"
+          name="registration_form"
+          id="registration_form"
+        >
+          <div>
+            <label for="first_name">First Name:</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="Marcus"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Anderson"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="marcus_123"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="abc@crust.com"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="******"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="verify">Confirm Password:</label>
+            <input
+              type="password"
+              id="verify"
+              name="verify"
+              placeholder="******"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="">-- Select Country --</option>
+              <option value="UK">United Kingdom</option>
+              <option value="USA">United States</option>
+              <option value="Australia">Australia</option>
+              <option value="Japan">Japan</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Russia">Russia</option>
+            </select>
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="street">Street Address:</label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              placeholder="5 Short Street"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Edinburgh" />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="postcode">Postcode:</label>
+            <input
+              type="text"
+              id="postcode"
+              name="postcode"
+              placeholder="AA1 1AA"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="phone">Phone Number:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="999-999-9999"
+            />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="genre">Preferred Game Genre:</label>
+            <select id="genre" name="genre">
+              <option value="">-- Select Genre --</option>
+              <option value="rpg">RPG</option>
+              <option value="racing">Racing</option>
+              <option value="puzzle">Puzzle</option>
+              <option value="shooter">Shooter</option>
+              <option value="strategy">Strategy</option>
+            </select>
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="comments">Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="I enjoyed the RPG section..."
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="terms">I agree to the terms and conditions:</label>
+            <input type="checkbox" id="terms" name="terms" />
+            <span>*</span>
+          </div>
+
+          <div>
+            <label for="news">Receive news and promotions:</label>
+            <input type="checkbox" id="news" name="news" />
+          </div>
+
+          <div>
+            <label>&nbsp;</label>
+            <input type="submit" id="submit" name="submit" value="Submit" />
+            <input type="reset" id="reset" name="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

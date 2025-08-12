@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Online Gaming</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html" class="active">Contact Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="deals.html">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, inquiries, or feedback, feel free to reach
+          out to us. We're here to help!
+        </p>
+
+          <form action="index.html" method="get" id="contact_form"  name="contact_form">
+            <div>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" placeholder="Anthony Gracie" required />
+
+            </div>
+
+            <div>
+              <label for="email-address">Email Address:</label>
+              <input type="email" id="email-address" name="email-address"  placeholder="abc@crust.com" required />
+            </div>
+
+            <div>
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" placeholder="Lack of RPG options..." required />
+
+            </div>
+
+            <div>
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="I would consider signing up if..."
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <label>&nbsp;</label>
+              <input type="submit" id="submit" name="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="page-section">
+
+        <div>
+          <h2>Our Contact Information</h2>
+          <p>Email: support@onlinegaming.com</p>
+          <p>Phone: 1-800-123-4567</p>
+          <p>Address: 123 Gaming Street, Gamer City, GC 12345</p>
+        </div>
+
+        <div class="map">
+          <h3>Find Us</h3>
+          <p>Here is our location on the map:</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.8516349233155!2d25.102981746995464!3d45.826498094235404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa30a50ddbbdafeef%3A0xf9205e16ef01a9f!2sOnline%20Gaming%20Shop%20Craiova!5e0!3m2!1sen!2suk!4v1743867178151!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deals and Discounts - Online Gaming</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Logo OG 1.jpg"
+          alt="Online Gaming logo linking to homepage"
+          class="logo"
+        />
+      </a>
+      <h1>Online Gaming</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu" aria-label="Main Navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about_us.html">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="deals.html" class="active">Deals</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <h2>Current Deals & Discounts</h2>
+        <p>
+          Check out the latest offers, bundles, and promotions available
+          exclusively on Online Gaming!
+        </p>
+
+        <div>
+          <h3>Speed Racer - 50% Off</h3>
+          <img
+            src="images/speed_racer.jpg"
+            alt="speed racer game"
+            class="games_images"
+          />
+          <p>Now only £2.49 (was £4.99)</p>
+          <p>Limited Time</p>
+        </div>
+
+        <div>
+          <h3>Mystery Mansion + Puzzle Master Bundle</h3>
+          <img
+            src="images/the-mystery-mansion-800.webp"
+            alt="Mystery Mansion game"
+            class="games_images"
+          />
+          <p>Both for just £1.99 (Save £1.99!)</p>
+          <p>Bundle Offer</p>
+        </div>
+
+        <div>
+          <h3>Magic Academy - Free Trial for Members</h3>
+          <img
+            src="images/Ursula_Academy_of_Magic_29.webp"
+            alt="Magic Academy game"
+            class="games_images"
+          />
+          <p>Try the first 3 levels for free when you sign up as a member.</p>
+          <p>Members Only</p>
+        </div>
+
+        <div>
+          <h3>Holiday Season Sale</h3>
+          <p>Up to 60% off selected games during the holidays.</p>
+          <p>Seasonal Promo</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
