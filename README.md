@@ -48,8 +48,6 @@ Two main forms are used:
   - Uses HTML5 `required` attributes for basic validation.
   - Also redirects to the homepage after submission.
 
-> **Note**: All forms currently use `GET` methods. For improved security and privacy, switching to `POST` and backend handling is recommended in future versions.
-
 ## 📱 JavaScript & Interactivity
 
 - Uses **jQuery** for DOM manipulation and interactivity.
@@ -60,20 +58,7 @@ Two main forms are used:
 
 - A **Google Maps iframe** is embedded in the Contact Us page to provide location guidance.
 
-## 🔒 Security & Future Improvements
 
-- **Current Limitations**:
-
-  - No backend/server-side handling.
-  - Sensitive data submitted via GET (visible in URL).
-  - No sanitization of input fields.
-
-- **Recommendations**:
-  - Implement `POST` requests.
-  - Add backend support (e.g., PHP, Node.js) for secure data handling.
-  - Include input sanitization and further form validation (e.g., postcode formatting by region).
-
----
 
 ## 📌 Author
 
